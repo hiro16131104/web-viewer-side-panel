@@ -1,0 +1,65 @@
+:root {
+    --padding: 5px;
+    --margin-top: 5px;
+    --height-textbox: 2rem;
+    --height-button: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #555;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background: #fff;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    width: 100dvw;
+    padding: var(--padding);
+    overflow: scroll;
+}
+
+input[type=search] {
+    height: var(--height-textbox);
+    width: 100%;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    border: 1px solid #555;
+    border-radius: 5px;
+}
+
+button {
+    height: var(--height-button);
+    width: 100%;
+    margin-top: var(--margin-top);
+    cursor: pointer;
+    background: #2196f3;
+    border: 1px solid #2196f3;
+    border-radius: 5px;
+    color: #fff;
+}
+
+iframe {
+    height: calc(100% - (var(--margin-top) * 2) + var(--height-textbox) - var(--height-button));
+    width: 100%;
+    margin-top: var(--margin-top);
+    border: 1px solid #555;
+    border-radius: 5px;
+}

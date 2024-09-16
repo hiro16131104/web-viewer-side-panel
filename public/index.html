@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap">
+    <link rel="stylesheet" href="./style.css">
+    <title>web-viewer</title>
+</head>
+
+<body>
+    <div>
+        <input type="search" id="textboxUrl" list="example" placeholder="WebサイトのURLを入力">
+        <datalist id="example">
+            <option value="https://timer.onl.jp/"></option>
+            <option value="https://pomodoro.lit-gallery.com/"></option>
+        </datalist>
+        <button id="buttonDisplay">表示</button>
+        <iframe id="iframeWebSite" src="https://timer.onl.jp/"></iframe>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
